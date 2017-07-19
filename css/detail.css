@@ -1,0 +1,29 @@
+.hamburger{
+  color:#fff;
+}
+.googleplay{
+  border-radius: 5px;
+  width: 150px;
+}
+.project-para{
+  width:60%;
+  color:#737373;
+}
+.project-info-div{
+  margin-top: 250px;
+}
+.author-info{
+  padding: 0.5rem 1rem;
+    float: right;
+    border-radius: 50px;
+    background-color: #4a4a4a;
+    box-shadow: 3px 5px 6px #0e0e0e;
+}
+@media (max-width:769px){
+  .project-para{
+    width:100%;
+  }
+  .project-info-div{
+    margin-top: 150px;
+  }
+}

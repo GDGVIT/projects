@@ -1,0 +1,63 @@
+
+.nav-logo{
+  width:300px;
+}
+.project-cards-container{
+  width:100%;
+  height: 500px;
+    overflow: scroll;
+  overflow-y: hidden;
+}
+.project-cards-container-inner{
+  width:10000px;
+}
+.project-card{
+  background-color: #131416;
+  color:#fff;
+  float: left;
+  display: inline-block;
+  margin: 20px;
+  width:300px;
+  max-width: 90vw;
+  text-align: center;
+  padding:40px 20px;
+  padding-top: 60px;
+  vertical-align: middle;
+  box-shadow: 4px 11px 6px #151515;
+  min-height: 400px;
+}
+.project-logo{
+  max-width: 90%;
+  margin: auto;
+}
+.explore{
+  color:#737373;
+  float: right;
+  font-size: 13px;
+}
+.project-domain{
+  color:#737373 !important;
+}
+
+.project-cards-container::-webkit-scrollbar-track
+{
+  /*track to scroll the thumb*/
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #737373;
+}
+
+.project-cards-container::-webkit-scrollbar
+{
+  /*the outer most wrap...least visiible*/
+  height: 1px;
+	background-color:#737373;
+}
+
+.project-cards-container::-webkit-scrollbar-thumb
+{
+  /*the thumb*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
