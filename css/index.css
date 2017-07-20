@@ -1,30 +1,40 @@
 
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
 .nav-logo{
   width:300px;
 }
 .project-cards-container{
   width:100%;
-  height: 500px;
-    overflow: scroll;
+  padding-bottom: 40px;
+  overflow: scroll;
   overflow-y: hidden;
 }
 .project-cards-container-inner{
-  width:10000px;
+  white-space: nowrap;
+  width: auto;
+  height: 100%;
 }
 .project-card{
   background-color: #131416;
   color:#fff;
-  float: left;
+  cursor: pointer;
   display: inline-block;
   margin: 20px;
+  margin-bottom: 5px;
   width:300px;
   max-width: 90vw;
   text-align: center;
   padding:40px 20px;
   padding-top: 60px;
+
   vertical-align: middle;
   box-shadow: 4px 11px 6px #151515;
   min-height: 400px;
+  height: 400px;
 }
 .project-logo{
   max-width: 90%;
@@ -42,22 +52,50 @@
 .project-cards-container::-webkit-scrollbar-track
 {
   /*track to scroll the thumb*/
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #737373;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: #111;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
 }
 
 .project-cards-container::-webkit-scrollbar
 {
   /*the outer most wrap...least visiible*/
-  height: 1px;
-	background-color:#737373;
+  width:10px;
+  border-radius: 10px;
 }
 
 .project-cards-container::-webkit-scrollbar-thumb
 {
   /*the thumb*/
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: #333;
+}
+
+.card-animation{
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  background: #222427;
+  transition: top .4s ease 0s,left .4s ease .2s,height .8s ease .3s,width 1s ease .6s,background 2s ease 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.info{
+  position: relative;
+  top: -60px;
+  left: -20px;
+  height: 100vh;
+  width:100vw;
+  display: none;
+  border: 0px;
 }

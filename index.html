@@ -13,8 +13,11 @@
   <link rel="stylesheet" href="materialize/css/materialize.min.css" />
   <link rel="stylesheet" href="css/main.css"><!--initializing css-->
   <link rel="stylesheet" href="css/common.css"><!--the common css for both pages-->
+  <link rel="stylesheet" href="css/scroll.css" />
   <link rel="stylesheet" href="css/index.css" /><!--specifically for index page-->
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3.min.js" type="text/javascript"></script>
+  <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+  <script src="js/index.js" type="text/javascript"></script>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -30,61 +33,69 @@
     <br />
     <br />
 
-    <div class="project-cards-container">
-      <div class="project-cards-container-inner">
-      <a href="detail.html">
-        <div class="project-card">
-          <img src="img/icon.png" class="project-logo" />
-          <h4 class="project-title">Wifi Connect</h4>
-          <h6 class="project-domain">Android, Web</h6>
-        </div>
-      </a>
-      <a href="detail.html">
-        <div class="project-card">
-          <img src="img/icon.png" class="project-logo" />
-          <h4 class="project-title">Wifi Connect</h4>
-          <h6 class="project-domain">Android, Web</h6>
-        </div>
-      </a>
-      <a href="detail.html">
-        <div class="project-card">
-          <img src="img/icon.png" class="project-logo" />
-          <h4 class="project-title">Wifi Connect</h4>
-          <h6 class="project-domain">Android, Web</h6>
-        </div>
-      </a>
-      <a href="detail.html">
-        <div class="project-card">
-          <img src="img/icon.png" class="project-logo" />
-          <h4 class="project-title">Wifi Connect</h4>
-          <h6 class="project-domain">Android, Web</h6>
-        </div>
-      </a>
-      <a href="detail.html">
-        <div class="project-card">
-          <img src="img/icon.png" class="project-logo" />
-          <h4 class="project-title">Wifi Connect</h4>
-          <h6 class="project-domain">Android, Web</h6>
-        </div>
-      </a>
-      <a href="detail.html">
-        <div class="project-card">
-          <img src="img/icon.png" class="project-logo" />
-          <h4 class="project-title">Wifi Connect</h4>
-          <h6 class="project-domain">Android, Web</h6>
-        </div>
-      </a>
-    </div>
-</div>
-  </div>
+    <div class="project-cards-container" id="scrollwrap">
+      <div class="project-cards-container-inner" id="scroll">
 
-  <!-- <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script> -->
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-  <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
+        <div class="project-card">
+          <iframe src="detail.html" class="info"></iframe>
+          <div class="content-holder">
+            <img src="img/icon.png" class="project-logo" />
+            <h4 class="project-title">Wifi Connect</h4>
+            <h6 class="project-domain">Android, Web</h6>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <iframe src="detail.html" class="info"></iframe>
+          <div class="content-holder">
+            <img src="img/icon.png" class="project-logo" />
+            <h4 class="project-title">Wifi Connect</h4>
+            <h6 class="project-domain">Android, Web</h6>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <iframe src="detail.html" class="info"></iframe>
+          <div class="content-holder">
+            <img src="img/icon.png" class="project-logo" />
+            <h4 class="project-title">Wifi Connect</h4>
+            <h6 class="project-domain">Android, Web</h6>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <iframe src="detail.html" class="info"></iframe>
+          <div class="content-holder">
+            <img src="img/icon.png" class="project-logo" />
+            <h4 class="project-title">Wifi Connect</h4>
+            <h6 class="project-domain">Android, Web</h6>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <iframe src="detail.html" class="info"></iframe>
+          <div class="content-holder">
+            <img src="img/icon.png" class="project-logo" />
+            <h4 class="project-title">Wifi Connect</h4>
+            <h6 class="project-domain">Android, Web</h6>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <iframe src="detail.html" class="info"></iframe>
+          <div class="content-holder">
+            <img src="img/icon.png" class="project-logo" />
+            <h4 class="project-title">Wifi Connect</h4>
+            <h6 class="project-domain">Android, Web</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <input type="range" name="test" /> -->
+  </div>
+<!--
+  <script src="materialize/js/materialize.min.js" type="text/javascript"></script> -->
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
