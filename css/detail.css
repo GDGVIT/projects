@@ -4,11 +4,102 @@
 .googleplay{
   border-radius: 5px;
   width: 150px;
+  margin-top: 30px;
+  opacity: 0;
+  animation: paraani .5s ease-in-out 2.7s forwards;
 }
 .project-para{
   width:60%;
   color:#737373;
+  margin-top: 30px;
+  opacity: 0;
+  animation: paraani .5s ease-in-out 2s forwards;
 }
+.project-info-div{
+  margin-top: 250px;
+}
+
+.project-title{
+  margin-top: 30px;
+  opacity: 0;
+  animation: paraani .5s ease-in-out 1.3s forwards;
+}
+.close-img{
+  width:50px;
+}
+.author-info{
+  padding: 0.5rem 1rem;
+  float: right;
+  border-radius: 50px;
+  background-color: #222427;
+  box-shadow: 3px 5px 6px #1b1d1f;
+}
+.author-outer{
+  position: relative;
+display: inline-block;
+
+}
+.tooltip_templates {
+  display: none;
+ }
+ .author-name{
+   color:#f2f2f2;
+   margin-bottom: 0px;
+ }
+ .author-domain{
+   color:#777;
+   font-size: 13px;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+ .tooltip_content{
+   padding:0;
+   margin:0
+ }
+ .author-hr{
+   border-color: #474444;
+   width:105%;
+ }
+ .author-social-div{
+   text-align: center;
+ }
+ .author-social{
+   margin:5px;
+ }
+ .author-social a{
+   color:#999;
+ }
+.facebook:hover{
+   color:#3b5998;
+ }
+ .github:hover{
+   color:red;
+ }
+ .behance:hover{
+   color:#053eff;
+ }
+/*.author-popup{
+  background: #2d2d2d;
+  color: #717171;
+  box-shadow: 3px 5px 6px #1b1d1f;
+  font-size: 13px;
+  height: 30px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 80px;
+  left: -70px;
+  opacity: 0;
+  padding: 0 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}*/
+
 .project-info-div{
   margin-top: 250px;
 }
@@ -16,13 +107,6 @@
   width:35px;
   margin:0 5px;
   border-radius: 50%;
-}
-.author-info{
-  padding:5px 10px;
-    float: right;
-    border-radius: 50px;;
-    background-color: #4a4a4a;
-    box-shadow: 3px 5px 6px #0e0e0e;
 }
 @media (max-width:769px){
   .project-para{

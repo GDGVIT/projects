@@ -8,43 +8,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png">
+  <style>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="materialize/css/materialize.min.css" />
-  <link rel="stylesheet" href="css/main.css"><!--initializing css-->
-  <link rel="stylesheet" href="css/common.css"><!--the common css for both pages-->
-  <link rel="stylesheet" href="css/detail.css" /><!--specifically for index page-->
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
+  <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css"><!--initializing css-->
+  <link rel="stylesheet" type="text/css" href="css/common.css"><!--the common css for both pages-->
+  <link rel="stylesheet" type="text/css" href="css/detail.css" /><!--specifically for index page-->
+  <script src="js/vendor/modernizr-2.8.3.min.js" type="text/javascript"></script>
 </head>
-<body>
+<body >
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <div class="main-con">
     <div class="nav">
       <a href="index.html">
-      <i class="fa fa-bars hamburger" aria-hidden="true"></i>
-    </a>
-    <span class="author-info">
-      <img class="author-img" src="img/hkedia321.jpg" />
-        <img class="author-img" src="img/hkedia321.jpg" />
+        <span class="close-details">
+          <img src="img/close.png" class="close-img" />
+        </span>
+      </a>
+      <span class="author-info">
+        <span class="author-outer">
+          <img class="tooltip author-img" data-tooltip-content="#tooltip_content1" src="img/hkedia321.jpg" />
+        </span>
+        <span class="author-outer">
           <img class="author-img" src="img/hkedia321.jpg" />
-            <img class="author-img" src="img/hkedia321.jpg" />
-    </span>
+        </span>
+        <span class="author-outer">
+          <img class="author-img" src="img/hkedia321.jpg" />
+        </span>
+        <div class="tooltip_templates">
+          <div class="tooltip_content" id="tooltip_content1">
+            <h6 class="center author-name">Harshit Kedia</h6>
+            <div class="author-domain center">
+              Front-end Developer
+            </div>
+            <hr class="author-hr" />
+            <div class="author-social-div">
+            <span class="author-social"><a class="facebook" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span>
+              <span class="author-social"><a class="github" href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
+              <span class="author-social"><a class="behance" href="#"><i class="fa fa-behance-square" aria-hidden="true"></i></a></span>
+          </div>
+          </div>
+        </div>
+      </span>
     </div>
     <div class="project-info-div">
-        <h4 class="project-title">Wifi Connect</h4>
-        <p class="project-para">
-          Share Paper app is made specifically for the students of VIT university to eliminate the problem of sharing question papers during the exams.This app provides the options to the user to upload question papers based on different subjects , slots in a elegant and user friendly manner.
-          </p>
-          <img src="img/googleplay.png" class="googleplay responsive-img" />
+      <h4 class="project-title">Wifi Connect</h4>
+      <p class="project-para">
+        Share Paper app is made specifically for the students of VIT university to eliminate the problem of sharing question papers during the exams.This app provides the options to the user to upload question papers based on different subjects , slots in a elegant and user friendly manner.
+      </p>
+      <img src="img/googleplay.png" class="googleplay responsive-img" />
 
     </div>
 
-``
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-  <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
-  <script src="js/plugins.js"></script>
-</body>
-</html>
+    <script src="js/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script src="js/plugins.js" type="text/javascript"></script>
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript">
+    $('.tooltip').tooltipster({
+      contentCloning: true,
+      theme: 'tooltipster-borderless',
+      animation: 'fade',
+      side:"bottom",
+      minWidth:50,
+      maxWidth:250,
+      trigger:"hover",
+      interactive:true
+    });
+    </script>
+  </body>
+  </html>
